@@ -71,7 +71,6 @@ header a:hover {
 /* ABOUT SECTION */
 .about {
     display: flex;
-    margin-bottom: 40px;
 }
 
 .about div {
@@ -169,7 +168,138 @@ footer {
     padding: 15px;
 }
 
-footer img {
-    
-    color: #000000;
+footer img {    
+    width: 200px;
+}
+
+/* Tablet styles */
+@media (max-width: 960px) {
+	body {
+		font-size: 16px;
+    }
+
+    header {
+		padding: 18px;
+	}
+
+    .header-left a {
+		margin-right: 16px;	
+	}
+
+	.header-right a {
+		margin-left: 16px;
+	}
+
+    .hero {
+		margin-top: -60px;
+	}
+
+    .container {
+		padding: 30px;
+	}
+
+    .product {
+		width: 50%;
+	}
+
+    .show-filters {
+		display: block;
+	}
+
+    .filters-list {
+		display: none;
+	}
+
+    .filters-list a {
+		display: block;
+        width: max-content;
+        margin-bottom: 8px;
+	}
+}
+
+@media (max-width: 760px) {
+
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .about .about-info,
+    .about .guitars-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+        margin-top: -90px;
+    }
+
+    header {
+        font-size: 12px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 440px) {
+	body {
+		font-size: 14px;
+	}
+
+    h2,
+    h3 {
+        font-size: 24px;
+    }
+
+    .header {
+        padding-top: 5px;
+    }
+
+    .header-left a,
+	.header-right a {
+		font-size: 10px;
+	}
+
+    .hero {
+		margin-top: -65px;
+	}
+
+    /* .about {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .about .about-info,
+    .about .guitars-image {
+        width: 100%;
+    } */
+
+	.site-logo img {
+		width: 140px;
+	}
+
+    .store {
+        padding: 20px 10px;
+    }
+
+	.product {
+		width: 100%;
+        margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 320px) {
+    header {
+        padding-top: 5px;
+    }
+
+    .header-right a {
+        margin-left: 5px;
+    }
+
+    .header-left a {
+        margin-right: 5px;
+    }
 }
